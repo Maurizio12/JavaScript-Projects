@@ -1,19 +1,20 @@
-window.alert("Hello Word"); //windows.alert method
+document.write ("helloo") 
 
-document.write("Hello Word"); //document.write method
+var X = " This is a string"
+document.write (X)
 
-var A = " This is a string"; //defining a variable with a string value
-document.write(A);
+var text = "this is \\ my plain \"text\"" + "for a pop up alert"
+window.alert (text);
 
-var name =" My name is Ken " //defining a variable with a string value
-window.alert(name)
+var car =" ferrari", motorbike =" suzuki", boat =" Sailboat",
+train =" Inter-City.";
+document.write (train);
 
-var car ="Ferrari"
-document.write(" My car is a " + car);
+function click () {                                     //define a function and name it
+    var str ="change_name";                             //define a variable, name it and give a string value
+    document.getElementById("Button").innerHTML = str; // get element from an ID and dislpay the string value.
+}
 
-var solarSistem =" milkyWay ", Jupiter = " redOne ", Saturn =" rings " //defining multiple variables with a string values
-    Pluto =" farest ", Venus =" beauty "
-document.write(Pluto); //display the variable pluto only 
-
-3+3  //expression
-document.write(3+3);
+var Sent1 =" This is the beginning of the string",
+    Sent2 =" and this is the end of the string."
+    document.write(Sent1 + Sent2)
