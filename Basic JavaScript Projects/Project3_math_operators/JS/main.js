@@ -33,7 +33,7 @@ function modulus () {                                      // this function is u
 
 function unary () {
     var X = 10;
-    document.getElementById("unary").innerHTML = unary;
+    document.getElementById("unary").innerHTML = -X;
 }
 
 var x = 5 ;
@@ -48,3 +48,5 @@ document.write (x);
 function random() {
     document.getElementById("random").innerHTML = Math.random()*10;
 }
+
+document.write(" 10" + 5)
