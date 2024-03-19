@@ -13,11 +13,6 @@ function check_Age () {
     document.getElementById("elegible").innerHTML = can_Vote + " to vote";
 }
 
-function slice_method() {
-    var sentence = "All work and no play makes Jhonny a dull boy";
-    var Section = sentence.slice(11,18);
-    document.getElementById("slice").innerHTML = Section;
-}
 
 /*constructor*/
 function Vehicle(Make, Model, Year, Color) {
@@ -48,22 +43,6 @@ function my_Function() {
     }
 }
 
-/*countdown*/
-function countdown(){
-    var seconds = document.getElementById("seconds").value;
-
-    function tick(){
-        seconds = seconds - 1;
-        timer.innerHTML = seconds;
-        var time = setTimeout(tick,1000);
-        if (seconds == -1){
-            alert("Time's up");
-            clearTimeout (time);
-            timer.innerHTML = "";
-        }
-    }
-    tick();
-}
 
 function add_number1 () {
     var X =10;

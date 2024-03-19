@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p>check if you are old enough</p>
+        <input id="input"  value="18" />
+        <button onclick="myFunction()">click here</button>
+        <p id="ride"></p>
+        <p id="demo"></p>
+        <script>
+            function myFunction () {
+                var number = document.getElementById ("input").value;
+                var can = (number < 18) ? "you are not old enough" : "you are old enough";
+                document.getElementById("ride").innerHTML = can
+            }
+            const data = new Date();
+            document.getElementById("demo").innerHTML = data.getMilliseconds();
+        </script>
+    </body>
+</html>
+

@@ -7,6 +7,6 @@ function my_Dictionary (){
         Age: 5,
         Sound: "Bark"
     };
-    delete Animal.Color;                                             // if I chose color will be undefined 
+    delete Animal.Color;                                             // if I choose color will be undefined 
     document.getElementById("Dictionary").innerHTML = Animal.Color;  //Animal.Breed parents.child 
 }
