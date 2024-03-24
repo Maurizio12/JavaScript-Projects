@@ -4,5 +4,5 @@ function call_Loop () {
     while (X < 10) {
         loops += +X; X++;
     }       
-    document.getElementById ("loop").innerHTML = loops;
+    document.getElementById ("loop").innerHTML = loops.length;
 }
