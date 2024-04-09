@@ -72,12 +72,12 @@ const Perform_Calculation = {
     '*' : (First_Operand, Second_Operand) => First_Operand * Second_Operand,
     '+' : (First_Operand, Second_Operand) => First_Operand + Second_Operand,
     '-' : (First_Operand, Second_Operand) => First_Operand - Second_Operand,
-    '=' : (First_Operand, Second_Operand) => First_Operand / Second_Operand
+    '=' : (First_Operand, Second_Operand) => Second_Operand
 };
 
 function Calculator_Reset() {
     Calculator.Display_Value = '0';
-    Calculator.First_Operand == null;
+    Calculator.First_Operand = null;
     Calculator.Wait_Second_Operand = false;
     Calculator.operator = null;
 }
@@ -98,10 +98,13 @@ keys.addEventListener('click', (event) => {
     //that was clicked.
     const { target } = event;
     //if the element that was clicked on is not a button, exit the function.
+    if (!target.matches('button')) {
+        return;
+    }    
     if (target.classList.contains('operator')) {
         Handle_Opereator(target.value);
         Update_Display();
-        return;
+        return
     }
     if (target.classList.contains('decimal')) {
         Input_Decimal(target.value);
@@ -117,3 +120,4 @@ keys.addEventListener('click', (event) => {
     Input_Digit(target.value);
     Update_Display();
 })
+
