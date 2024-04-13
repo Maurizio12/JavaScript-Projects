@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>XML</title>
+    <meta name="description" content="A basic HTML, CSS, and Javascript Calculator">
+    <meta name="author" content="Maurizio">
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        var XML_Parser, XML_Document;
+        //create a new tag using string
+        var Movie = "<movie>" +
+            "<title> Schindler\'s List</title>" +
+            "<director> Maurizio </director>"
+            "</movie>";
+        // create an XML DOM parser
+        XML_Parser = new DOMParser();
+
+        //creates a new XML DOM object using the string text.
+        XML_Document = XML_Parser.parseFromString(Movie,"text/xml");
+
+        document.getElementById("text").innerHTML = 
+        XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>
