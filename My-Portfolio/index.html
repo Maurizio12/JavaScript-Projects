@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>MG-DESIGN Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="CSS/Icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="CSS/Icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="CSS/Icons/favicon-16x16.png">
+        <link rel="manifest" href="CSS/Icons/site.webmanifest">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7a93c3ce16.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <script src="JavaScript/main.js"></script>
+    </head>
+    <body>
+        <!--Nav bar-->
+        <div class="navbar">
+            <!--three lines checkbox menu-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+                <!--end-->
+            </label>
+            <label class="logo">MG-Portfolio</label>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#github">Github  </a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--/Nav bar-->
+
+        <!--Background video-->
+        <div id="home">
+            <video autoplay muted loop id="coding-video">
+                <source src="CSS/Videos/pexels-mikhail-nilov-7534244 (1080p).mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Maurizio Gizzi</h1>
+            <strong>
+                <p class="center">
+                    <q>“First, solve the problem. Then, write the code.” – John Johnson
+                        <br>Don’t worry about what anybody else is going to do. The best way to predict the future is to invent it.” – Alan Kay
+                        <br>The most disastrous thing that you can ever learn is your first programming language.” – Alan Kay
+
+                    </q>
+                    <br>
+                    <br> My name is Murizio. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                </p>
+            </strong>
+        </div>
+           <!--About section-->
+           <div class="Row" id="about">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="CSS/Images/pexels-gijs-coolen-2880476.jpg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a Web developer who loves to code! I enjoy solve problem and get into details to deliver always the best experience to my clients.
+                    <br>
+                    <br>I successfully pass my web developer course at <a href="https://www.pitman-training.com/" target="_blank">Pitman training.</a> I have good knowledge in the following web and programming languages: HTML, CSS and javascript.
+                    <br>
+                    <br>I am an enthusiast developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="github">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Maurizio12/Portfolio" target="_blank">Click here!!</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Maurizio12/Portfolio" target="_blank"><img src="CSS/Images/OIP.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/f/xyyrlkak" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
+            </div>
+         </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://github.com/Maurizio12/Portfolio" target="_blank">My works</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
